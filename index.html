@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>astrology</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css " rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- google font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- animatioin on scroll link -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- Custom css link -->
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/phone.css">
+ 
+</head>
+
+<body>
+
+    <!----------------------------------------------- Header section Start ---------------------------------------->
+    <video autoplay muted loop id="myVideo">
+        <source src="Img/moving vdo.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <header class="header">
+
+        <div class="navigation  shadow position-sticky top-0">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex gap-1 align-items-center border-bottom " href="index.html">
+                        <img src="Img/logo.png" style=" width: 2rem;  object-fit: cover;" alt="logo">
+                        <span class="fw-bold text-light  fs-4 ">Astrology</span>
+                    </a>
+                    <div class="collapse navbar-collapse">
+
+                        <ul class="navbar-nav gap-5 ms-5">
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold " href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold " href="#About">About_Us</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold " href="#Services">Services</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold " href="#Contact">Contact_Us
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold " href="#">Help</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class=" nav-login ">
+                        <button class="btn btn-orange px-3 fw-bold fs-5" data-bs-toggle="modal"
+                            data-bs-target="#userlogin">
+                        <img src="Img/login_icon.png" style="width:2rem" alt="">
+
+                            Login </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- phone navigation -->
+        <div class="phone-navigation">
+
+            <ul class="nav justify-content-around pt-2 pb-3">
+                <li class="nav-item text-center rounded">
+                    <a class="nav-link fw-bold" href="#Home">
+                        <img src="Img/home_icon.png" alt="loading">
+                        <p>Home</p>
+                    </a>
+                </li>
+
+                <li class="nav-item text-center rounded">
+                    <a class="nav-link fw-bold" href="#About">
+                        <img src="Img/about icon.png" alt="loading">
+                        <p>About</p>
+                    </a>
+                </li>
+
+                <li class="nav-item text-center rounded">
+                    <a class="nav-link fw-bold" href="#Contact">
+                        <img src="Img/phone_icon.png" alt="loading">
+                        <p>Contact</p>
+                    </a>
+                </li>
+                <li class="nav-item text-center rounded" data-bs-toggle="modal" data-bs-target="#userlogin">
+                    <a class="nav-link fw-bold" href="#">
+                        <img src="Img/login_icon.png" alt="loading">
+                        <p>Login</p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+
+        <!-- #=================== USER LOGIN POPUP START=======================# -->
+        <!-- ----------FIRST STEP  ------------>
+
+        <div class="modal fade user_login_popup" id="userlogin" style="background: #020202af; ">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body ">
+                        <div class="row">
+                            <div class="col-md-6 rounded left-side p-5">
+                                <img src="Img/login_popup.png" class="img-fluid" width="" alt="">
+                            </div>
+                            <div class="col-md-6 my-auto">
+                                <form action="" method="#">
+
+                                    <div class="text-center">
+                                        <h4 class="fw-bold  mb-3 ">Login using your Phone Number
+                                        </h4>
+
+                                        <p class="text-secondary fw-bold">
+                                            You will receive a 4 digit code
+                                            for verification </p>
+                                    </div>
+
+                                    <label class="form-label">Enter Phone No.</label>
+                                    <div class="input-group border border-secondary rounded">
+                                        <span class="input-group-text" id="basic-addon1"> <img src="Img/popup_img.webp"
+                                                class="img-fluid" alt=""> +91</span>
+                                        <input type="number" class="form-control shadow-none"
+                                            placeholder="Enter Phone Number">
+                                    </div>
+
+                                    <div class="text-center mt-3">
+                                        <a href="user_login.html" class="btn btn-orange fw-bold px-5"
+                                            data-bs-toggle="modal" data-bs-target="#GETOTP">Get OTP</a>
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ----------SECOND STEP  ------------>
+        <div class="modal fade user_login_popup" id="GETOTP">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6 rounded  p-5">
+                                <img src="Img/otp vrify.jpg" class="img-fluid" width="" alt="loading">
+                            </div>
+                            <div class="col-md-6 my-auto  px-3">
+                                <form action="" method="#">
+
+                                    <div class="text-center">
+                                        <h4 class="fw-bold  mb-3 ">Varify Your Phone
+                                        </h4>
+
+                                        <p class="text-secondary fw-bold">
+                                            OTP Sent To +91-6395615657 </p>
+                                    </div>
+
+                                    <div class="d-flex  gap-2  rounded">
+                                        <input type="number" class="form-control shadow-none border-dark"
+                                            placeholder="0">
+                                        <input type="number" class="form-control shadow-none border-dark"
+                                            placeholder="0">
+                                        <input type="number" class="form-control shadow-none border-dark"
+                                            placeholder="0">
+                                        <input type="number" class="form-control shadow-none border-dark"
+                                            placeholder="0">
+                                    </div>
+
+                                    <div class="text-center mt-3">
+                                        <a href="astro_dashboard.html" class="btn btn-orange fw-bold px-5">Login</a>
+                                    </div>
+                                    <div class="text-center mt-3">
+                                        <span class="text-success fw-bold">Resend OTP</span>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #=================== USER LOGIN POPUP END=======================# -->
+
+
+        <div class="header-content">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 ">
+                        <div class="left-side " data-aos="flip-right">
+                            <h1 class="fw-bold text-white">The Astrology Is The <span class=" "> Mathematics
+                                    Of Brain. </span></h1>
+                            <p class="fw-bold text-light">Astrology is a range of divinatory practices, recognized as
+                                pseudoscientific since the 18th century, that claim to discern information about human
+                                affairs and terrestrial events by studying the apparent positions of celestial objects.
+                            </p>
+                            <button class="btn btn-orange fw-bold mt-2">Register Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 right-side  " data-aos="flip-up">
+                        <img src="Img/Shaktiman.png" class="img-fluid" width="100%" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!----------------------------------------------- Header section end ---------------------------------------->
+
+    <!-- about -->
+    <div class="about-section mt-2" id="About">
+
+        <div class="container py-5">
+            <div class="row g-2">
+                <div class="col-lg-6 my-auto">
+                    <div class="left-side " data-aos="flip-right">
+
+                        <div class="section-heading mb-5">
+                            <h2 class="">About Us</h2>
+                            <h4 class=" ">Know About Astrology!!!</h4>
+                        </div>
+
+                        <p class="text-secondary">It is a long established fact that a reader will be distracted by the
+                            readable content of a page when looking at its layout. The point of using Ipsum is that it
+                            esdehas a more-or less normal distribution of letters.
+                        </p>
+                        <p class="text-secondary">
+                            As opposed to using Content here content here making it look likesdesdee readable
+                            English.Many desktop publishing packages and web page editors sdesnow use em Ipsum as their
+                            default model text, and a search for lorem will usdencover many web sites still in their web
+                            page editors sdesnow infancy.
+                        </p>
+                        <p class="text-secondary">It is a long established fact that a reader will be distracted by the
+                            readable content of a page when looking at its layout. The point of using Ipsum is that it
+                            esdehas a more-or less normal distribution of letters.</p>
+                        <p class="text-secondary">
+                            As opposed to using Content here content here making it look likesdesdee readable
+                            English.Many desktop publishing packages and web page editors sdesnow use em Ipsum as their
+                            default model text, and a search for lorem will usdencover many web sites still in their web
+                            page editors sdesnow infancy.
+                        </p>
+                        <!-- <button class="btn" >Read More</button> -->
+                    </div>
+                </div>
+
+                <div class="col-lg-6 right-side " data-aos="flip-up">
+                    <div class="p-2 ">
+                        <img src="Img/about.png" class="  img-fluid pb-5" width=" " alt="loading">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- our Services section -->
+    <div class="service-section mt-2 " id="Services">
+        <div class=" container pt-3">
+            <div class="section-heading  ">
+                <h2 class=" ">Services</h2>
+                <h4 class=" text-light">What We Serve To You</h4>
+            </div>
+
+            <div class="row g-5 my-5 py-3" data-aos="flip-left">
+
+                <div class="col-md-4 col-sm-6 mb-5">
+
+                    <div class="card border-secondary shadow h-100">
+                        <div class="text-center ">
+                            <img src="Img/service1.jpg" class="rounded-circle border-2 border-secondary border p-2"
+                                alt="loading">
+
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Kundli Dosha</h5>
+                            <p class="card-text text-secondary">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Natus voluptas nam doloribus..</p>
+                            <a href="#" class="btn btn-orange">Read More...</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-5">
+
+                    <div class="card border-secondary shadow h-100">
+                        <div class="text-center ">
+                            <img src="Img/service2.jpg" class="rounded-circle border-2 border-secondary border p-2"
+                                alt="loading">
+
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Face Reading</h5>
+                            <p class="card-text text-secondary">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Natus voluptas nam doloribus..</p>
+                            <a href="#" class="btn btn-orange">Read More...</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-5">
+                    <div class="card border-secondary shadow h-100">
+                        <div class="text-center ">
+                            <img src="Img/service3.avif" class="rounded-circle border-2 border-secondary border p-2"
+                                alt="loading">
+
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Palm Reading</h5>
+                            <p class="card-text text-secondary">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Natus voluptas nam doloribus..</p>
+                            <a href="#" class="btn btn-orange">Read More...</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-5">
+                    <div class="card border-secondary shadow h-100">
+                        <div class="text-center ">
+                            <img src="Img/service4.avif" class="rounded-circle border-2 border-secondary border p-2"
+                                alt="loading">
+
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Personal Consultation</h5>
+                            <p class="card-text text-secondary">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Natus voluptas nam doloribus..</p>
+                            <a href="#" class="btn btn-orange">Read More...</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-5">
+                    <div class="card border-secondary shadow h-100">
+                        <div class="text-center ">
+                            <img src="Img/service5.avif" class="rounded-circle border-2 border-secondary border p-2"
+                                alt="loading">
+
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Manglik Dosha</h5>
+                            <p class="card-text text-secondary">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Natus voluptas nam doloribus..</p>
+                            <a href="#" class="btn btn-orange">Read More...</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-5">
+                    <div class="card border-secondary shadow h-100">
+                        <div class="text-center ">
+                            <img src="Img/service6.jpg" class="rounded-circle border-2 border-secondary border p-2"
+                                alt="loading">
+
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Daily Horoscope</h5>
+                            <p class="card-text text-secondary">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Natus voluptas nam doloribus..</p>
+                            <a href="#" class="btn btn-orange">Read More...</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- zodic sign -->
+    <div class="Symbol-section mt-2" id="Zodic_Symbols">
+        <div class="container pt-3">
+            <div class="section-heading ">
+                <h2 class=" ">Zodic Sign</h2>
+                <h4 class="text-light ">Choose Your Zodic Sign?</h4>
+            </div>
+
+            <div class=" py-5">
+                <div class="row g-2" data-aos="flip-right">
+
+                    <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+                        <div class="card border-light pt-2">
+                            <div class="image m-auto p-2 rounded-circle">
+                                <img src="Img/zodic icon1.png" class="card-img-top   img-fluid" alt="loading">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-dark fw-bold">Aries</h4>
+                                <span class="fw-bold  rounded py-1 px-3">  MAR 23-APR 21 </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+                        <div class="card border-light pt-2">
+                            <div class="image m-auto p-2 rounded-circle">
+                                <img src="Img/zodic icon2.png" class="card-img-top  img-fluid" alt="loading">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-dark fw-bold">Taurus</h4>
+                                <span class="fw-bold  rounded py-1 px-3">  MAR 23-APR 21 </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3  col-sm-4 col-6">
+                        <div class="card border-light pt-2">
+                            <div class="image m-auto p-2 rounded-circle">
+                                <img src="Img/zodic icon3.png" class="card-img-top   img-fluid" alt="loading">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-dark fw-bold">Gemini</h4>
+                                <span class="fw-bold  rounded py-1 px-3">  MAR 23-APR 21 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-3  col-sm-4 col-6">
+                        <div class="card border-light pt-2">
+                            <div class="image m-auto p-2 rounded-circle">
+                                <img src="Img/zodic icon4.png" class="card-img-top img-fluid" alt="loading">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-dark fw-bold">Cancer</h4>
+                                <span class="fw-bold  rounded py-1 px-3">  MAR 23-APR 21 </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3  col-sm-4 col-6">
+                        <div class="card border-light pt-2">
+                            <div class="image m-auto p-2 rounded-circle">
+                                <img src="Img/zodic icon5.png" class="card-img-top img-fluid" alt="loading">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-dark fw-bold">Leo</h4>
+                                <span class="fw-bold  rounded py-1 px-3">  MAR 23-APR 21 </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+                        <div class="card border-light pt-2">
+                            <div class="image m-auto p-2 rounded-circle">
+                                <img src="Img/zodic icon6.png" class="card-img-top  img-fluid" alt="loading">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-dark fw-bold">Virgo</h4>
+                                <span class="fw-bold  rounded py-1 px-3">  MAR 23-APR 21 </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+                        <div class="card border-light pt-2">
+                            <div class="image m-auto p-2 rounded-circle">
+                                <img src="Img/zodic icon7.png" class="card-img-top   img-fluid" alt="loading">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-dark fw-bold">Libra</h4>
+                                <span class="fw-bold  rounded py-1 px-3">  MAR 23-APR 21 </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+                        <div class="card border-light pt-2">
+                            <div class="image m-auto p-2 rounded-circle">
+                                <img src="Img/zodic icon8.png" class="card-img-top  img-fluid" alt="loading">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-dark fw-bold">Scorpio</h4>
+                                <span class="fw-bold  rounded py-1 px-3">  MAR 23-APR 21 </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+                        <div class="card border-light pt-2">
+                            <div class="image m-auto p-2 rounded-circle">
+                                <img src="Img/zodic icon9.png" class="card-img-top   img-fluid" alt="loading">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-dark fw-bold">Sagittarius</h4>
+                                <span class="fw-bold  rounded py-1 px-3">  MAR 23-APR 21 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+                        <div class="card border-light pt-2">
+                            <div class="image m-auto p-2 rounded-circle">
+                                <img src="Img/zodic icon10.png" class="card-img-top img-fluid" alt="loading">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-dark fw-bold">Capricorn</h4>
+                                <span class="fw-bold  rounded py-1 px-3">  MAR 23-APR 21 </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+                        <div class="card border-light pt-2">
+                            <div class="image m-auto p-2 rounded-circle">
+                                <img src="Img/zodic icon11.png" class="card-img-top img-fluid" alt="loading">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-dark fw-bold">Aquarius</h4>
+                                <span class="fw-bold  rounded py-1 px-3">  MAR 23-APR 21 </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+                        <div class="card border-light pt-2">
+                            <div class="image m-auto p-2 rounded-circle">
+                                <img src="Img/zodic icon12.png" class="card-img-top  img-fluid" alt="loading">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-dark fw-bold">Picses</h4>
+                                <span class="fw-bold  rounded py-1 px-3">  MAR 23-APR 21 </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- contact section -->
+    <div class="contact-section mt-4 py-4 shadow" id="Contact">
+        <div class=" container ">
+            <div class="section-heading">
+                <h2 class="">Contact</h2>
+                <h4 class="text-dark ">Get In Touch</h4>
+
+            </div>
+
+            <div class=" py-5">
+                <div class="row g-2">
+                    <div class="col-md-6 my-auto left-side" data-aos="flip-up">
+                        <div>
+                            <form action="" method="post">
+
+                                <input type="text" class="form-control  mb-2" placeholder="Enter Your Name">
+                                <input type="email" class="form-control mb-2" placeholder="Enter Your Email">
+                                <input type="tel" class="form-control mb-2" placeholder="Enter Your Phone No.">
+                                <textarea class="form-control mb-2" width="100%" rows="4"
+                                    placeholder="Write Your Query..."></textarea>
+                                <div class="text-center">
+                                    <button class="btn btn-orange fw-bold px-5">Send Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 text-center" data-aos="flip-right">
+                        <iframe width="350px" height="350px" class=" shadow" style="border-radius: 10% 10% 10% 10%;"
+                            src="https://www.youtube.com/embed/bwJ3PhvpwLI"
+                            title="videoblocks rotating mystic golden zodiac horoscope symbol with twelve planets in cosmic scene 4k hy"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- our review section  -->
+    <div class="review-section container mt-5">
+        <div class="section-heading   ">
+            <h2 class="">Testimonial</h2>
+            <h4 class=" ">What My Client Say's</h4>
+
+        </div>
+
+        <div class=" py-5">
+            <div class="row g-2">
+
+                <div class="col-md-4 ">
+                    <div class="card border-dark p-2" data-aos="flip-left">
+
+                        <div class="card-body">
+                            <p class="text-secondary mt-2">
+                                &nbsp; <q>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis,
+                                    temporibus.
+                                    Asperiores hic non accusantium, expedita quidem laudantium incidunt cupiditate
+                                    nulla. Nobis repudiandae velit impedit necessitatibus? </q>
+                            </p>
+                        </div>
+                        <div class="pb-2 d-flex align-items-center justify-content-around">
+                            <div> <img src="Img/review1.png" class="border border-dark p-1 rounded-circle img-fluid" />
+                            </div>
+                            <div>
+                                <h5 class="text-center ">Mrs. Rishab Garg </h5>
+                                <p class="text-warning"> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i
+                                        class="bi bi-star-half"></i>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card border-dark p-2" data-aos="flip-up">
+
+                        <div class="card-body">
+                            <p class="text-secondary mt-2">
+                                &nbsp; <q>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis,
+                                    temporibus.
+                                    Asperiores hic non accusantium, expedita quidem laudantium incidunt cupiditate
+                                    nulla. Nobis repudiandae velit impedit necessitatibus? </q>
+                            </p>
+                        </div>
+                        <div class="pb-2 d-flex align-items-center justify-content-around">
+                            <div> <img src="Img/review2.png" class="border border-dark p-1 rounded-circle img-fluid" />
+                            </div>
+                            <div>
+                                <h5 class="text-center ">Mrs. Rishab Garg </h5>
+                                <p class="text-warning"> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i
+                                        class="bi bi-star-half"></i>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card border-dark p-2" data-aos="flip-right">
+
+                        <div class="card-body">
+                            <p class="text-secondary mt-2">
+                                &nbsp; <q>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis,
+                                    temporibus.
+                                    Asperiores hic non accusantium, expedita quidem laudantium incidunt cupiditate
+                                    nulla. Nobis repudiandae velit impedit necessitatibus? </q>
+                            </p>
+                        </div>
+                        <div class="pb-2 d-flex align-items-center justify-content-around">
+                            <div> <img src="Img/review3.png" class="border border-dark p-1 rounded-circle img-fluid" />
+                            </div>
+                            <div>
+                                <h5 class="text-center ">Mrs. Rishab Garg </h5>
+                                <p class="text-warning"> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i
+                                        class="bi bi-star-half"></i>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <div class="footer mt-3 py-5 ">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-3 col-sm-12 text-lg-start text-center">
+                    <div>
+                        <a class="navbar-brand fw-bold text-light fs-5 " href="index.html">
+                            <img src="Img/logo.png" style=" width: 2rem;  object-fit: cover;" alt="logo">
+                            <span class="">Astrology</span>
+                        </a>
+                        <p class="text-white">Astrology is a range of divinatory practices, recognized as
+                            pseudoscientific since the 18th century, that claim to discern information about human
+                            affairs and terrestrial events by studying the apparent positions of celestial objects.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 text-lg-start text-center">
+                    <div>
+                        <h5 class="fw-bold">Helpfull Links
+                        </h5>
+                        <p class=""><a class="text-light text-decoration-none" href="">Kundli_Matching
+                            </a></p>
+                        <p class=""><a class="text-light text-decoration-none" href="">Zodic_Sign
+                            </a></p>
+                        <p class=""><a class="text-light text-decoration-none" href=""> Testimonials
+                            </a></p>
+                        <p class=""><a class="text-light text-decoration-none" href="">Get_In_Touch
+                            </a></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 text-lg-start text-center">
+
+                    <div>
+                        <h5 class="fw-bold">Quick Link
+                        </h5>
+                        <p class=""><a class="text-light text-decoration-none" href="">Home
+                            </a></p>
+                        <p class=""><a class="text-light text-decoration-none" href="">About_Us
+                            </a></p>
+                        <p class=""><a class="text-light text-decoration-none" href="">Services
+                            </a></p>
+                        <p class=""><a class="text-light text-decoration-none" href="">Contact_Us
+                            </a></p>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-4 text-lg-start text-center">
+                    <div>
+                        <h5 class="fw-bold">Join With Us
+                        </h5>
+                        <p class=""><a href="" class="text-light text-decoration-none"> <i class="bi bi-instagram"></i>
+                                Instagram</a></p>
+                        <p class=""><a href="" class="text-light text-decoration-none"> <i class="bi bi-facebook"></i>
+                                Facebook</a></p>
+                        <p class=""><a href="" class="text-light text-decoration-none"> <i class="bi bi-whatsapp"></i>
+                                Whatsapp</a></p>
+                        <p class=""><a href="" class="text-light text-decoration-none"> <i class="bi bi-twitter"></i>
+                                Twitter</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- animatio on scroll link -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1000,
+        });
+    </script>
+
+</body>
+
+</html>
